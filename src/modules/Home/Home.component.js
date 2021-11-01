@@ -75,11 +75,16 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
         ...(open && {
             ...openedMixin(theme),
             '& .MuiDrawer-paper': openedMixin(theme),
+
         }),
         ...(!open && {
             ...closedMixin(theme),
             '& .MuiDrawer-paper': closedMixin(theme),
+
         }),
+        '.MuiDrawer-paper': {
+            backgroundColor: "#ddd",
+        }
     }),
 );
 

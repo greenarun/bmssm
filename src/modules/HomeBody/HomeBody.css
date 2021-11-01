@@ -9,7 +9,10 @@
       left: 0;
   }
   .App-header{position: relative;}
-  
+  @media only screen and (max-width: 900px) {
+    .App-header{margin:0 auto;width: 150px;}
+  }
+
   @media (prefers-reduced-motion: no-preference) {
     .App-logo {
       animation: App-logo-spin infinite 20s linear;
